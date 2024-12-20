@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Котокафе "ПроХвост"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span>ПроХвост</span>
+        <nav class="nav">
+            <a href="index.html" class="nav_item">Кто мы</a>
+            <a href="price.html" class="nav_item">Цены и услуги</a>
+            <a href="kind.html" class="nav_item">Добрые дела</a>
+        </nav>
+    </header>
+    <section >
+        <h1>Цены</h1>
+        <div class="price_grid">
+        <table class="price_list"> <!--table with prices-->
+            <tr><th></th><th>Дети</th><th>Взрослые</th><th>Льготы*</th></tr>
+            <tr><td>Будни</td><td>150 р/час</td><td>300 р/час</td><td>250 р/час</td></tr>
+            <tr><td>Выходные</td><td>200 р/час</td><td>350 р/час</td><td>300 р/час</td></tr>
+        </table>
+        <span>* Студенты, пенсионеры, лица с ОВЗ. При предоставлении соответствующего документа. <!--some exta information-->
+            
+        </span>
+        </div>
+    </section>
+    <section >
+        <h1>Бронь</h1>
+        <div class="booking_grid">
+        <span>
+            В нашем кафе можно забронировать отдельное помещение для мероприятия. <br>
+            Минимальное время брони составляет 3 часа, стоимость 1000 р/час.<br>
+            В таблице снизу можно узнать о занятости помещения в ближайшие дни. Если вы хотите узнать о возможности брони в более отдаленные даты или задать иной вопрос по данной услуге, вы можете заполнить форму справа или позвонить нам.
+        </span>
+        <form method="post" action="/ask/" id="ask_form">
+            <span>ФИО</span>
+            <input type="text" name="fio" required>
+            <span>Номер телефона</span>
+            <input type="tel" name="phone" required>
+            <span>Почта</span>
+            <input type="email" name="mail" required>
+            <span>Вопрос</span>
+            <textarea name="question" required></textarea>
+            <button id='submit_btn' type="submit">Отправить</button>
+        </form>
+        <table  class="booking_list" id="booking_list"> <!--table with prices-->
+            <tr><th>Дата</th><th>Статус</th></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+        </table>
+        </div>
+    </section>
+    <footer>
+        <span>Наши контакты</span>
+        <div>
+            <img src="images/letter.svg" class="contact__image">
+            <span>prohvost@cats.com</span>
+        </div>
+        <div>
+            <img src="images/phone.svg" class="contact__image">
+            <span>+110 214 214 245</span>
+        </div>
+        <div>
+            <img src="images/location.svg" class="contact__image">
+            <span>Котвиль, ул. Мурзикова, д.13</span>
+        </div>
+        <p class="copyright">Copyright © 2024 ПроХвост</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
